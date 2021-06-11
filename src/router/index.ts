@@ -19,6 +19,12 @@ const routes: Array<RouteConfig> = [
     component: () =>
       import(/* webpackChunkName: "about" */ "../views/About.vue"),
   },
+  {
+    path: "/editor",
+    name: "Editor",
+    component: () =>
+      import(/* webpackChunkName: "editor" */ "../views/Editor.vue"),
+  },
 ];
 
 const router = new VueRouter({
