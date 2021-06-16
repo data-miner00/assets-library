@@ -1,16 +1,18 @@
 <template>
   <header class="header">
-    <div class="header__logo">Assets Library</div>
+    <router-link to="/">
+      <div class="header__logo">Assets Library</div>
+    </router-link>
     <nav class="header__nav">
-      <router-link to="showcase">
+      <router-link to="/showcase">
         <div class="header__nav__item">Showcase</div>
       </router-link>
 
-      <router-link to="library">
+      <router-link to="/library">
         <div class="header__nav__item">Library</div>
       </router-link>
 
-      <router-link to="editor">
+      <router-link to="/editor">
         <div class="header__nav__item">Editor</div>
       </router-link>
     </nav>
