@@ -16,6 +16,9 @@ export default Vue.extend({
 <style lang="sass">
 @import "./assets/sass/global"
 
+#app
+  position: relative
+
 // Archive
 // #app {
 //   font-family: Avenir, Helvetica, Arial, sans-serif;
