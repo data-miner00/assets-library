@@ -31,6 +31,7 @@
   left: 0
   width: 100%
   background: white
+  z-index: 999
 
   &__logo
     font-size: 1.5em
