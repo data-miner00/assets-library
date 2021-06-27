@@ -1,45 +1,86 @@
 <template>
   <header class="header">
-    <router-link to="/">
-      <div class="header__logo">Assets Library</div>
-    </router-link>
+    <div class="header__logo">
+      <router-link to="/">
+        <div class="header__logo__text">Assets Library</div>
+      </router-link>
+    </div>
+
     <nav class="header__nav">
-      <router-link to="/showcase">
-        <div class="header__nav__item">Showcase</div>
+      <router-link to="/" class="header__nav__item" active-class="active">
+        <div>Home</div>
+      </router-link>
+      <router-link
+        to="/showcase"
+        class="header__nav__item"
+        active-class="active"
+      >
+        <div>Showcase</div>
       </router-link>
 
-      <router-link to="/library">
-        <div class="header__nav__item">Library</div>
+      <router-link
+        to="/library"
+        class="header__nav__item"
+        active-class="active"
+      >
+        <div>Library</div>
       </router-link>
 
-      <router-link to="/editor">
-        <div class="header__nav__item">Editor</div>
+      <router-link to="/editor" class="header__nav__item" active-class="active">
+        <div>Editor</div>
       </router-link>
     </nav>
   </header>
 </template>
 
+<script lang="ts">
+import Vue from "vue";
+
+export default Vue.extend({
+  //
+});
+</script>
+
 <style lang="sass" scoped>
+@import "../assets/sass/_variables"
+
 .header
-  height: 80px
-  padding: 0 20%
-  display: flex
-  justify-content: space-between
-  align-items: center
-  border-bottom: 1px solid #eee
-  box-shadow: 1px 1px 10px #eee
-  position: sticky
-  top: 0
-  left: 0
-  width: 100%
-  background: white
-  z-index: 999
+  padding: 1vw 3vw
 
   &__logo
-    font-size: 1.5em
+    width: 1024px
+    margin: 0 auto
 
+
+    &__text
+      font-family: $balthazar
+      text-transform: uppercase
+      font-size: 2em
+      letter-spacing: 3px
+      width: fit-content
+      margin: 0 auto
   &__nav
-    width: 200px
-    justify-content: space-between
+
+    width: 1024px
+    margin: 1vw auto 0
     display: flex
+    justify-content: center
+
+    &__item
+      text-transform: uppercase
+      font-size: 0.85em
+      padding: 0 20px
+      font-family: 'Times New Roman', Times, serif
+
+      &.active
+        div
+          position: relative
+          &::before
+            position: absolute
+            content: ''
+            left: 0
+            right: 0
+            bottom: -2px
+            height: 1px
+            background: black
 </style>
