@@ -7,13 +7,13 @@
     </div>
 
     <nav class="header__nav">
-      <router-link to="/" class="header__nav__item" active-class="active">
+      <router-link to="/" class="header__nav__item" exact-active-class="active">
         <div>Home</div>
       </router-link>
       <router-link
         to="/showcase"
         class="header__nav__item"
-        active-class="active"
+        exact-active-class="active"
       >
         <div>Showcase</div>
       </router-link>
@@ -21,12 +21,16 @@
       <router-link
         to="/library"
         class="header__nav__item"
-        active-class="active"
+        exact-active-class="active"
       >
         <div>Library</div>
       </router-link>
 
-      <router-link to="/editor" class="header__nav__item" active-class="active">
+      <router-link
+        to="/editor"
+        class="header__nav__item"
+        exact-active-class="active"
+      >
         <div>Editor</div>
       </router-link>
     </nav>
