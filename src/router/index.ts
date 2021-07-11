@@ -31,6 +31,12 @@ const routes: Array<RouteConfig> = [
     component: () =>
       import(/* webpackChunkName: "showcase" */ "../views/Showcase.vue"),
   },
+  {
+    path: "/library",
+    name: "Library",
+    component: () =>
+      import(/* webpackChunkName: "library" */ "../views/Library.vue"),
+  },
 ];
 
 const router = new VueRouter({
