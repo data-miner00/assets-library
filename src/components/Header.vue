@@ -8,18 +8,23 @@
     </div>
     <nav class="header__navs">
       <div class="header__navs__search"></div>
-      <router-link to="/docs">
+      <router-link to="/" exact-active-class="eactive">
+        <div class="header__navs__link">
+          <span>Home</span>
+        </div></router-link
+      >
+      <router-link to="/docs" exact-active-class="eactive">
         <div class="header__navs__link">
           <span>Documentation</span>
         </div></router-link
       >
-      <router-link to="/editor">
+      <router-link to="/editor" exact-active-class="eactive">
         <div class="header__navs__link"><span>Editor</span></div></router-link
       >
-      <router-link to="/showcase">
+      <router-link to="/showcase" exact-active-class="eactive">
         <div class="header__navs__link"><span>Showcase</span></div></router-link
       >
-      <router-link to="/gallery">
+      <router-link to="/gallery" exact-active-class="eactive">
         <div class="header__navs__link">
           <span>Gallery</span>
         </div></router-link
@@ -29,8 +34,9 @@
 </template>
 
 <style lang="sass" scoped>
-// Default active state set by vue router
-.active div span
+// Default active state set by vue router --> not really useful
+// Change to manually set exact-active-class instead
+.eactive div span
   position: relative
   &::after
     content: ''
@@ -48,6 +54,10 @@
   padding: 0 10%
   align-items: center
   border-bottom: 1px solid #eee
+  position: sticky
+  top: 0
+  background: white
+  z-index: 999
   &__logo
     display: flex
     align-items: center
