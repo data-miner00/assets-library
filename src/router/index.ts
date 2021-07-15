@@ -20,6 +20,14 @@ const routes: Array<RouteConfig> = [
       import(/* webpackChunkName: "about" */ "../views/About.vue"),
   },
   {
+    path: "/docs",
+    name: "Documentation",
+    component: () =>
+      import(
+        /* webpackChunkName: "editor" */ "../views/Documentation/index.vue"
+      ),
+  },
+  {
     path: "/editor",
     name: "Editor",
     component: () =>
