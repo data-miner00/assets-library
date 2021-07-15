@@ -1,90 +1,71 @@
 <template>
   <header class="header">
     <div class="header__logo">
-      <router-link to="/">
-        <div class="header__logo__text">Assets Library</div>
-      </router-link>
+      <div class="header__logo__svg">
+        <img src="/logo.svg" alt="logo" />
+      </div>
+      <div class="header__logo__text">assets library</div>
     </div>
-
-    <nav class="header__nav">
-      <router-link to="/" class="header__nav__item" exact-active-class="active">
-        <div>Home</div>
-      </router-link>
-      <router-link
-        to="/showcase"
-        class="header__nav__item"
-        exact-active-class="active"
+    <nav class="header__navs">
+      <div class="header__navs__search"></div>
+      <router-link to="/docs">
+        <div class="header__navs__link">
+          <span>Documentation</span>
+        </div></router-link
       >
-        <div>Showcase</div>
-      </router-link>
-
-      <router-link
-        to="/library"
-        class="header__nav__item"
-        exact-active-class="active"
+      <router-link to="/editor">
+        <div class="header__navs__link"><span>Editor</span></div></router-link
       >
-        <div>Library</div>
-      </router-link>
-
-      <router-link
-        to="/editor"
-        class="header__nav__item"
-        exact-active-class="active"
+      <router-link to="/showcase">
+        <div class="header__navs__link"><span>Showcase</span></div></router-link
       >
-        <div>Editor</div>
-      </router-link>
+      <router-link to="/gallery">
+        <div class="header__navs__link">
+          <span>Gallery</span>
+        </div></router-link
+      >
     </nav>
   </header>
 </template>
 
-<script lang="ts">
-import Vue from "vue";
-
-export default Vue.extend({
-  //
-});
-</script>
-
 <style lang="sass" scoped>
-@import "../assets/sass/_variables"
+// Default active state set by vue router
+.active div span
+  position: relative
+  &::after
+    content: ''
+    position: absolute
+    left: 0
+    right: 0
+    bottom: -5px
+    height: 3px
+    background: #8857ed
 
 .header
-  padding: 1vw 3vw
-
+  display: flex
+  justify-content: space-between
+  height: 65px
+  padding: 0 10%
+  align-items: center
+  border-bottom: 1px solid #eee
   &__logo
-    width: 1024px
-    margin: 0 auto
-
-
-    &__text
-      font-family: $balthazar
-      text-transform: uppercase
-      font-size: 2em
-      letter-spacing: 3px
-      width: fit-content
-      margin: 0 auto
-  &__nav
-
-    width: 1024px
-    margin: 1vw auto 0
     display: flex
-    justify-content: center
+    align-items: center
+    &__svg
+      width: 40px
+      height: 40px
+      img
+        width: 40px
+    &__text
 
-    &__item
-      text-transform: uppercase
-      font-size: 0.85em
-      padding: 0 20px
-      font-family: 'Times New Roman', Times, serif
+      font-size: 1.7em
+      text-transform: lowercase
+      font-weight: 600
+  &__navs
+    display: flex
+    &__link
+      padding: 10px 0
 
-      &.active
-        div
-          position: relative
-          &::before
-            position: absolute
-            content: ''
-            left: 0
-            right: 0
-            bottom: -2px
-            height: 1px
-            background: black
+      padding-right: .6em
+      margin: 0 .8em
 </style>
