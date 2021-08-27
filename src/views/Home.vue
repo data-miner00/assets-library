@@ -1,29 +1,23 @@
+<!--
+  This should be the landing page of the whole docs site
+
+-->
 <template>
   <div class="home">
-    <h1>This is heading 1</h1>
-    <h2>This is heading 2</h2>
-    <h3>This is heading 3</h3>
-    <h4>This is heading 4</h4>
-    <h5>This is heading 5</h5>
-    <h6>This is heading 6</h6>
-    <p>
-      This is a paragraph Lorem ipsum dolor sit amet consectetur adipisicing
-      elit. Dolorum, debitis quasi eligendi est consectetur culpa molestiae at
-      voluptatibus, distinctio assumenda sit repellat unde obcaecati, natus aut
-      error et quae cum!
-    </p>
-    <button>hello</button>
-    <hr />
-    <blockquote>
-      This is a blockquote Lorem ipsum dolor sit amet consectetur adipisicing
-      elit. Commodi perspiciatis minus magni placeat, ipsum earum. Delectus
-      natus expedita numquam sapiente cupiditate harum quos fugit praesentium
-      dolores? Error maxime dolorem doloribus!
-    </blockquote>
-    <textarea name="display" id="" cols="30" rows="10">
-fsdfsdfsdfasfsfasdfsadf</textarea
-    >
-    <input type="text" placeholder="This is a input" />
+    <section class="home__landing">
+      <div class="home__landing__logo--img">
+        <img src="/logo.svg" alt="Assets Library Logo" height="200" />
+      </div>
+      <div class="home__landing__logo--text">Assets<br />Library</div>
+      <div class="home__landing__btns">
+        <button class="home__landing__btn home__landing__btn--primary">
+          Get Started
+        </button>
+        <button class="home__landing__btn home__landing__btn--secondary">
+          Learn More
+        </button>
+      </div>
+    </section>
   </div>
 </template>
 
@@ -35,4 +29,32 @@ export default Vue.extend({
 });
 </script>
 
-<style lang="sass" scoped></style>
+<style lang="sass" scoped>
+.home
+  &__landing
+    display: flex
+    flex-direction: column
+    align-items: center
+    padding: 60px 0
+    &__logo
+      &--text
+        font-size: 3.6em
+
+    &__btns
+      display: flex
+    &__btn
+      display: block
+      border-radius: 5px
+      padding: 0 24px
+      line-height: 52px
+      font-size: 1.2em
+      font-weight: 500
+      margin-top: 2em
+      &--primary
+        background: #6610f2
+        color: white
+      &--secondary
+        color: #6610f2
+        border: 2px solid #6610f2
+        margin-left: 1.5em
+</style>
