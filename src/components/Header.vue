@@ -51,7 +51,7 @@
   display: flex
   justify-content: space-between
   height: 65px
-  padding: 0 10%
+  padding: 0 16%
   align-items: center
   border-bottom: 1px solid #eee
   position: sticky
@@ -75,7 +75,8 @@
     display: flex
     &__link
       padding: 10px 0
-
+      font-size: .9em
+      font-weight: 600
       padding-right: .6em
       margin: 0 .8em
 </style>
