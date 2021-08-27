@@ -58,6 +58,22 @@ const routes: Array<RouteConfig> = [
           ),
       },
       {
+        path: "fonts",
+        name: "fonts",
+        component: () =>
+          import(
+            /* webpackChunkName: "fonts" */ "../views/Documentation/Fonts.vue"
+          ),
+      },
+      {
+        path: "dev",
+        name: "dev",
+        component: () =>
+          import(
+            /* webpackChunkName: "dev" */ "../views/Documentation/Development.vue"
+          ),
+      },
+      {
         path: "frameworks",
         name: "frameworks",
         component: () =>
