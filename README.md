@@ -7,3 +7,4 @@
 - [ ] Add dynamic page displayer with unique slug URL
 - [ ] Add useful websites for design - [x] Lorem Ipsum - [ ] Image website
 - [ ] Add wysiwyg editor
+- [ ] Add image displayer page
