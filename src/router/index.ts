@@ -20,6 +20,18 @@ const routes: Array<RouteConfig> = [
       import(/* webpackChunkName: "about" */ "../views/About.vue"),
   },
   {
+    path: "/dev",
+    name: "dev",
+    component: () =>
+      import(/* webpackChunkName: "dev" */ "../views/Development.vue"),
+  },
+  {
+    path: "/resources",
+    name: "resources",
+    component: () =>
+      import(/* webpackChunkName: "resources" */ "../views/Resources.vue"),
+  },
+  {
     path: "/docs",
     name: "documentation",
     component: () =>
@@ -63,14 +75,6 @@ const routes: Array<RouteConfig> = [
         component: () =>
           import(
             /* webpackChunkName: "fonts" */ "../views/Documentation/Fonts.vue"
-          ),
-      },
-      {
-        path: "dev",
-        name: "dev",
-        component: () =>
-          import(
-            /* webpackChunkName: "dev" */ "../views/Documentation/Development.vue"
           ),
       },
       {
