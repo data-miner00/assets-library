@@ -5,30 +5,33 @@
         <div class="header__logo__svg">
           <img src="/logo.svg" alt="logo" />
         </div>
-        <div class="header__logo__text">assets library</div>
+        <div class="header__logo__text">Assets Library</div>
       </div></router-link
     >
     <nav class="header__navs">
       <div class="header__navs__search"></div>
       <router-link to="/dev" exact-active-class="eactive">
         <div class="header__navs__link">
-          <span>Development</span>
+          <span>Dev</span>
         </div></router-link
       >
       <router-link to="/docs" exact-active-class="eactive">
         <div class="header__navs__link">
-          <span>Documentation</span>
+          <span>Guide</span>
         </div></router-link
       >
       <router-link to="/editor" exact-active-class="eactive">
         <div class="header__navs__link"><span>Editor</span></div></router-link
       >
       <router-link to="/showcase" exact-active-class="eactive">
-        <div class="header__navs__link"><span>Showcase</span></div></router-link
+        <div class="header__navs__link"><span>Gallery</span></div></router-link
       >
-      <router-link to="/gallery" exact-active-class="eactive">
+      <div class="header__navs__link">
+        <span>Languages</span>
+      </div>
+      <router-link to="/resources" exact-active-class="eactive">
         <div class="header__navs__link">
-          <span>Gallery</span>
+          <span>Resources</span>
         </div></router-link
       >
     </nav>
@@ -70,8 +73,7 @@
         width: 40px
     &__text
 
-      font-size: 1.7em
-      text-transform: lowercase
+      font-size: 1.4em
       font-weight: 600
   &__navs
     display: flex
