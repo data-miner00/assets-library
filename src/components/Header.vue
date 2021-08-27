@@ -1,16 +1,18 @@
 <template>
   <header class="header">
-    <div class="header__logo">
-      <div class="header__logo__svg">
-        <img src="/logo.svg" alt="logo" />
-      </div>
-      <div class="header__logo__text">assets library</div>
-    </div>
+    <router-link to="/">
+      <div class="header__logo">
+        <div class="header__logo__svg">
+          <img src="/logo.svg" alt="logo" />
+        </div>
+        <div class="header__logo__text">assets library</div>
+      </div></router-link
+    >
     <nav class="header__navs">
       <div class="header__navs__search"></div>
-      <router-link to="/" exact-active-class="eactive">
+      <router-link to="/dev" exact-active-class="eactive">
         <div class="header__navs__link">
-          <span>Home</span>
+          <span>Development</span>
         </div></router-link
       >
       <router-link to="/docs" exact-active-class="eactive">
