@@ -12,6 +12,10 @@
       <h1>Sliding Text</h1>
       <SlidingText />
     </section>
+    <section class="showcase__section">
+      <h1>Join The Fun</h1>
+      <JoinTheFun />
+    </section>
   </div>
 </template>
 
@@ -21,12 +25,14 @@ import Vue from "vue";
 import CardReflectHover from "@/ui-components/others/CardReflectHover/index.vue";
 import AnimatingGradient from "@/ui-components/others/AnimatingGradient.vue";
 import SlidingText from "@/ui-components/others/SlidingText.vue";
+import JoinTheFun from "@/ui-components/text/JoinTheFun.vue";
 
 export default Vue.extend({
   components: {
     CardReflectHover,
     AnimatingGradient,
     SlidingText,
+    JoinTheFun,
   },
 });
 </script>
