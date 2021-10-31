@@ -1,7 +1,12 @@
 <template>
   <div class="editor-page">
-    <textarea id="editor-textarea" ref="editor" v-model="code"></textarea>
-    <iframe ref="viewer" id="viewer"></iframe>
+    <div class="editor-page__heading">
+      <h1>Mini Editor</h1>
+    </div>
+    <div class="editor-page__editor">
+      <textarea id="editor-textarea" ref="editor" v-model="code"></textarea>
+      <iframe ref="viewer" id="viewer"></iframe>
+    </div>
   </div>
 </template>
 
@@ -28,12 +33,15 @@ export default Vue.extend({
 
 <style lang="sass" scoped>
 .editor-page
-  height: 100vh
-  display: inline-flex
   width: 100%
+  padding: 50px 16%
+
+  &__editor
+    display: inline-flex
+    height: 400px
 
 #editor-textarea
-  width: 100%
+  width: 400px
   height: 95%
   margin: 10px
   padding: 5px
@@ -41,7 +49,7 @@ export default Vue.extend({
 #viewer
   background: white
   border: none
-  width: 100%
+  width: 400px
   height: 95%
   margin: 10px
   border: 1px solid #3498db

@@ -18,6 +18,8 @@
         </button>
       </div>
     </section>
+
+    <section class="home__"></section>
   </div>
 </template>
 
@@ -51,7 +53,7 @@ export default Vue.extend({
       font-weight: 500
       margin-top: 2em
       &--primary
-        background: #6610f2
+        background: linear-gradient(90deg, rgba(84,212,165,1) 0%, rgba(87,50,196,1) 100%)
         color: white
       &--secondary
         color: #6610f2

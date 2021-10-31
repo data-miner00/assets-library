@@ -1,6 +1,12 @@
 <template>
   <div class="resources">
     <h1>Resources</h1>
+    <p>
+      There are a lot of internet resource out there but all of them are
+      scattered afar that might be difficult to retrieve when needed. Here are a
+      few sets of curated internet resources that are invaluable in your design
+      + development journey.
+    </p>
   </div>
 </template>
 
@@ -22,6 +28,8 @@ https://cssnectar.com/
 https://www.siteinspire.com/
 https://coolors.co/
 https://fonts.google.com/
+https://www.fontsquirrel
+https://caniuse.com/
 -->
 
 <script lang="ts">
