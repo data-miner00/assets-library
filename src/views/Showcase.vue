@@ -16,6 +16,10 @@
       <h1>Join The Fun</h1>
       <JoinTheFun />
     </section>
+    <section class="showcase__section">
+      <h1>Sample Popover</h1>
+      <SamplePopover />
+    </section>
   </div>
 </template>
 
@@ -26,6 +30,7 @@ import CardReflectHover from "@/ui-components/others/CardReflectHover/index.vue"
 import AnimatingGradient from "@/ui-components/others/AnimatingGradient.vue";
 import SlidingText from "@/ui-components/others/SlidingText.vue";
 import JoinTheFun from "@/ui-components/text/JoinTheFun.vue";
+import SamplePopover from "@/ui-components/popover/SamplePopover.vue";
 
 export default Vue.extend({
   components: {
@@ -33,6 +38,7 @@ export default Vue.extend({
     AnimatingGradient,
     SlidingText,
     JoinTheFun,
+    SamplePopover,
   },
 });
 </script>

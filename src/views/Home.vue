@@ -10,12 +10,18 @@
       </div>
       <div class="home__landing__logo--text">Assets<br />Library</div>
       <div class="home__landing__btns">
-        <button class="home__landing__btn home__landing__btn--primary">
+        <router-link
+          class="home__landing__btn home__landing__btn--primary"
+          to="/docs"
+        >
           Get Started
-        </button>
-        <button class="home__landing__btn home__landing__btn--secondary">
+        </router-link>
+        <router-link
+          class="home__landing__btn home__landing__btn--secondary"
+          to="/docs"
+        >
           Learn More
-        </button>
+        </router-link>
       </div>
     </section>
 
@@ -44,6 +50,9 @@ export default Vue.extend({
 
     &__btns
       display: flex
+      align-items: center
+      gap: 24px
+      margin-top: 2em
     &__btn
       display: block
       border-radius: 5px
@@ -51,12 +60,10 @@ export default Vue.extend({
       line-height: 52px
       font-size: 1.2em
       font-weight: 500
-      margin-top: 2em
       &--primary
         background: linear-gradient(90deg, rgba(84,212,165,1) 0%, rgba(87,50,196,1) 100%)
         color: white
       &--secondary
         color: #6610f2
         border: 2px solid #6610f2
-        margin-left: 1.5em
 </style>
